@@ -1,3 +1,18 @@
+# V2.1.0
+* Update CodeQL workflow to v2. ([#1485](https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/1485),[@mskanth972](https://github.com/mskanth972))
+* Bump side-cars to the latest. ([#1484](https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/1484),[@mskanth972](https://github.com/mskanth972))
+* Update kubernetes to version 1.27.16 to patch CVE-2024-5321. ([#1475](https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/1475),[@mselim00](https://github.com/mselim00))
+# V2.0.9
+* Upgrade AL2 version and address CVEs (CVE-2024-34156, CVE-2024-34158)
+* Fix controller template to support replicaCount, resources, topologySpreadConstraints
+* Migrate to aws-sdk-go-v2. ([#1458](https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/1458), [@avanish23](https://github.com/avanish23))
+# V2.0.8
+* Update K8s dependencies. ([#1440](https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/1440), [@retornam](https://github.com/retornam))
+* Add flag that enables CSI driver to be added without using helm hooks ([#1074](https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/1074), [@woehrl01](https://github.com/woehrl01))
+* Add new region DNS suffixes to watchdog ([#1455](https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/1455), [@jdwtf](https://github.com/jdwtf))
+* Use protobuf content type instead of JSON for K8s client ([#1451](https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/1451), [@bhavi-koduru](https://github.com/bhavi-koduru))
+# V2.0.7
+* Update GO version from 1.20 to 1.22.5 to mitigate CVEs. ([#1427](https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/1427),[@mskanth972](https://github.com/mskanth972))
 # V2.0.6
 * Updated the docker file to install the latest version of Rust. ([#1414](https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/1414),[@mskanth972](https://github.com/mskanth972))
 * Increase the default Port Range from 400 to 1000. ([#1402](https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/1402),[@mskanth972](https://github.com/mskanth972))

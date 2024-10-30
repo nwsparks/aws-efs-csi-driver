@@ -1,7 +1,12 @@
 module github.com/kubernetes-sigs/aws-efs-csi-driver
 
 require (
-	github.com/aws/aws-sdk-go v1.50.3
+	github.com/aws/aws-sdk-go-v2 v1.31.0
+	github.com/aws/aws-sdk-go-v2/config v1.27.35
+	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.13
+	github.com/aws/aws-sdk-go-v2/service/ec2 v1.178.0
+	github.com/aws/aws-sdk-go-v2/service/efs v1.31.8
+	github.com/aws/smithy-go v1.21.0
 	github.com/container-storage-interface/spec v1.7.0
 	github.com/golang/mock v1.6.0
 	github.com/google/uuid v1.3.1
@@ -11,16 +16,26 @@ require (
 	github.com/onsi/gomega v1.27.1
 	golang.org/x/exp v0.0.0-20230817173708-d852ddb80c63
 	google.golang.org/grpc v1.59.0
-	k8s.io/api v0.26.11
-	k8s.io/apimachinery v0.26.11
-	k8s.io/client-go v0.26.11
-	k8s.io/klog/v2 v2.80.1
-	k8s.io/kubernetes v1.26.11
-	k8s.io/mount-utils v0.26.11
-	k8s.io/pod-security-admission v0.26.11
+	k8s.io/api v0.26.15
+	k8s.io/apimachinery v0.26.15
+	k8s.io/client-go v0.26.15
+	k8s.io/klog/v2 v2.90.1
+	k8s.io/kubernetes v1.27.16
+	k8s.io/mount-utils v0.26.15
+	k8s.io/pod-security-admission v0.26.15
 )
 
 require (
+	github.com/aws/aws-sdk-go v1.50.3 // indirect
+	github.com/aws/aws-sdk-go-v2/credentials v1.17.33 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.18 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.18 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/ini v1.8.1 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.11.5 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.11.20 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sso v1.22.8 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.26.8 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sts v1.30.8 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/blang/semver/v4 v4.0.0 // indirect
 	github.com/cenkalti/backoff/v4 v4.2.1 // indirect
